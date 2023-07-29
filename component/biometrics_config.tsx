@@ -1,8 +1,7 @@
-import React from 'react';
 import { Alert } from 'react-native';
 import ReactNativeBiometrics, {BiometryTypes} from 'react-native-biometrics';
 
-const SimplePopup = () => {
+const Biometrics_Access = () => {
   var init_bio = new ReactNativeBiometrics();
   init_bio
     .isSensorAvailable()
@@ -23,4 +22,4 @@ const SimplePopup = () => {
       console.log('biometrics failed');
     });
 };
-export default SimplePopup;
+export default Biometrics_Access;
